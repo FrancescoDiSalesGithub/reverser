@@ -1,0 +1,27 @@
+insert into program values (1,'awk');
+insert into program values (2,'bash');
+insert into program values (3,'c');
+insert into program values (4,'Dart');
+insert into program values (5,'Golang');
+insert into program values (6,'Groovy');
+insert into program values (7,'Groovy 1');
+insert into program values (8,'Java');
+insert into program values (9,'Java 1');
+insert into program values (10,'Java 2');
+insert into program values (11,'Lua');
+insert into program values (12,'netcat');
+insert into program values (13,'netcat openbsd');
+insert into program values (14,'netcat busybox');
+insert into program values (15,'netcat Traditional');
+insert into program values (16,'NodeJS');
+insert into program values (17,'OpenSSL');
+insert into program values (18,'Perl');
+insert into program  values (19,'PHP');
+insert into program  values (20,'Powershell');
+insert into program  values (21,'Python');
+insert into program  values (22,'Ruby');
+insert into program  values (23,'Socat');
+insert into program  values (24,'Telnet');
+insert into program  values (25,'War');
+insert into program  values (26,'Meterpreter shell');
+
