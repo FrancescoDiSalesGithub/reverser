@@ -6,6 +6,12 @@ class reverseshell_data:
     def __init__(self) -> None:
         self.__connection=sqlite3.connect("enviroments.db")
                 
+    def get_all_applications(self):
+        
+        cursor = self.__connection.cursor()
+        for line in cursor.execute("select program from program"):
+            print(line[0])
+
 
     def execute(self,program):
 
