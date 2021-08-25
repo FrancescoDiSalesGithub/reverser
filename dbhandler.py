@@ -1,5 +1,5 @@
 import sqlite3
-
+import base64
 
 class reverseshell_data:
 
@@ -24,7 +24,7 @@ class reverseshell_data:
     def execute(self,program):
         cursor = self.__connection.cursor()
         for row in cursor.execute("SELECT s.command from program p,shell s where p.program = ? and p.id_program=s.id_program",[program]):
-            print(row[0])
+            print(base64.b64decode(row[0]).decode("utf-8","ignore"))
     
     def close_connection(self):
         self.__connection.close()
