@@ -16,5 +16,3 @@ if __name__ == "__main__":
 
     except:
         raise Exception("Something bad happened")
-
-    pass
