@@ -16,15 +16,15 @@ class reverseshell_data:
                 tables_file = open("sql/tables.sql","r")
                 table_lines = tables_file.readlines()
                 tables_file.close()
-                
+
                 cursor = self.__connection.cursor()
                 
        
 
     def execute(self,program):
         cursor = self.__connection.cursor()
-        for row in cursor.execute("SELECT * from shell where program=%s",(program)):
-            print(row)
+        for row in cursor.execute("SELECT s.command from program p,shell s where p.program = ? and p.id_program=s.id_program",[program]):
+            print(row[0])
     
     def close_connection(self):
         self.__connection.close()
