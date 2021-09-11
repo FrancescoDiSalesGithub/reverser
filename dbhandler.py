@@ -17,7 +17,7 @@ class reverseshell_data:
 
         try:
             cursor = self.__connection.cursor()
-            for row in cursor.execute("SELECT s.command from program p,shell s where p.program like ? and p.id_program=s.id_program",['%'+program'%']):
+            for row in cursor.execute("SELECT s.command from program p,shell s where p.program like ? and p.id_program=s.id_program",['%'+program+'%']):
                 print(base64.b64decode(row[0]).decode("utf-8","ignore"))
         except:
             
